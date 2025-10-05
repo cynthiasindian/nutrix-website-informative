@@ -1,0 +1,264 @@
+.footer {
+  background-color: var(--color-text);
+  color: rgba(255, 255, 255, 0.8);
+  padding: var(--spacing-4xl) 0 var(--spacing-xl);
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: var(--spacing-3xl);
+  margin-bottom: var(--spacing-3xl);
+  padding-bottom: var(--spacing-3xl);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Brand Section */
+.brandSection {
+  max-width: 350px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  cursor: pointer;
+  margin-bottom: var(--spacing-lg);
+  transition: transform var(--transition-fast);
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logoIcon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoText {
+  color: var(--color-white);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+}
+
+.logoName {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+}
+
+.brandDescription {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Social Links */
+.socialLinks {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.socialLink {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  color: rgba(255, 255, 255, 0.8);
+  transition: all var(--transition-base);
+}
+
+.socialLink:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transform: translateY(-3px);
+}
+
+.socialLink svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Links Section */
+.linksSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
+  margin-bottom: var(--spacing-lg);
+}
+
+.linksList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  list-style: none;
+}
+
+.link {
+  font-size: var(--font-size-base);
+  color: rgba(255, 255, 255, 0.7);
+  background: none;
+  border: none;
+  padding: var(--spacing-xs) 0;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+  text-align: left;
+}
+
+.link:hover {
+  color: var(--color-primary-lighter);
+}
+
+.teamMember {
+  font-size: var(--font-size-base);
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+  padding: var(--spacing-xs) 0;
+}
+
+.supervisor {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.supervisorLabel {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: var(--spacing-xs);
+}
+
+.supervisorName {
+  font-size: var(--font-size-base);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: var(--font-weight-medium);
+}
+
+/* Contact Section */
+.contactSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactText {
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--spacing-md);
+}
+
+.contactEmail {
+  font-size: var(--font-size-base);
+  color: var(--color-primary-lighter);
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  margin-bottom: var(--spacing-lg);
+  transition: color var(--transition-fast);
+}
+
+.contactEmail:hover {
+  color: var(--color-accent);
+}
+
+.university {
+  margin-top: auto;
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.universityName {
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-xs);
+}
+
+.universityDept {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: var(--spacing-xs);
+}
+
+.universityYear {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Bottom Bar */
+.bottomBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.copyright {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.legalLinks {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.legalLink {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.legalLink:hover {
+  color: var(--color-primary-lighter);
+}
+
+.separator {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .footerContent {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .brandSection {
+    grid-column: 1 / -1;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+  }
+
+  .bottomBar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .legalLinks {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
