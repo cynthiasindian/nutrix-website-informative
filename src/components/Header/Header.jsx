@@ -3,6 +3,7 @@ import Container from '../common/Container/Container';
 import { smoothScrollTo } from '../../utils/smoothScroll';
 import { useScrollSpy } from '../../hooks/useScrollSpy';
 import styles from './Header.module.css';
+import logoImage from '../../assets/images/logo.png';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,7 +43,7 @@ const Header = () => {
           {/* Logo */}
           <div className={styles.logo} onClick={() => handleNavClick('home')}>
             <img 
-              src="/assets/images/logo.png" 
+                src={logoImage} 
               alt="Nutrix Logo" 
               className={styles.logoImage}
             />

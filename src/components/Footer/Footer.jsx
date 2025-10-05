@@ -1,6 +1,8 @@
 import { smoothScrollTo, scrollToTop } from '../../utils/smoothScroll';
 import Container from '../common/Container/Container';
 import styles from './Footer.module.css';
+import logoImage from '../../assets/images/logo.png';
+
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -26,7 +28,7 @@ const Footer = () => {
           <div className={styles.brandSection}>
             <div className={styles.logo} onClick={scrollToTop}>
               <img 
-                src="/assets/images/logo.png" 
+                src={logoImage}
                 alt="Nutrix Logo" 
                 className={styles.logoImage}
               />
