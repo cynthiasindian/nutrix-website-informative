@@ -1,0 +1,101 @@
+:root {
+  /* Colors - Health-focused green palette */
+  --color-primary: #2D5F3F;
+  --color-primary-light: #4A9D6F;
+  --color-primary-lighter: #7BC096;
+  --color-primary-dark: #1A3D28;
+  
+  --color-secondary: #E8F5E9;
+  --color-accent: #66BB6A;
+  
+  --color-white: #FFFFFF;
+  --color-bg: #FAFAFA;
+  --color-bg-light: #F5F5F5;
+  
+  --color-text: #212121;
+  --color-text-light: #757575;
+  --color-text-lighter: #9E9E9E;
+  
+  --color-border: #E0E0E0;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  
+  /* Typography */
+  --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+  --font-size-5xl: 3rem;      /* 48px */
+  
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;   /* 4px */
+  --spacing-sm: 0.5rem;    /* 8px */
+  --spacing-md: 1rem;      /* 16px */
+  --spacing-lg: 1.5rem;    /* 24px */
+  --spacing-xl: 2rem;      /* 32px */
+  --spacing-2xl: 3rem;     /* 48px */
+  --spacing-3xl: 4rem;     /* 64px */
+  --spacing-4xl: 6rem;     /* 96px */
+  
+  /* Layout */
+  --container-max-width: 1200px;
+  --container-padding: 1.5rem;
+  
+  --header-height: 70px;
+  
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 var(--color-shadow);
+  --shadow-md: 0 4px 6px -1px var(--color-shadow);
+  --shadow-lg: 0 10px 15px -3px var(--color-shadow);
+  --shadow-xl: 0 20px 25px -5px var(--color-shadow);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+  
+  /* Z-index */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal: 1040;
+  --z-popover: 1050;
+  --z-tooltip: 1060;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  :root {
+    --font-size-3xl: 1.5rem;   /* 24px */
+    --font-size-4xl: 1.875rem; /* 30px */
+    --font-size-5xl: 2.25rem;  /* 36px */
+    
+    --container-padding: 1rem;
+    --spacing-2xl: 2rem;
+    --spacing-3xl: 3rem;
+    --spacing-4xl: 4rem;
+  }
+}
