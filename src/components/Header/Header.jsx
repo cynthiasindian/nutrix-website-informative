@@ -41,9 +41,11 @@ const Header = () => {
         <div className={styles.headerContent}>
           {/* Logo */}
           <div className={styles.logo} onClick={() => handleNavClick('home')}>
-            <div className={styles.logoIcon}>
-              <span className={styles.logoText}>N</span>
-            </div>
+            <img 
+              src="/assets/images/logo.png" 
+              alt="Nutrix Logo" 
+              className={styles.logoImage}
+            />
             <span className={styles.logoName}>Nutrix</span>
           </div>
 
