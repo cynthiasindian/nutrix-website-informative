@@ -43,7 +43,7 @@ const Header = () => {
           {/* Logo */}
           <div className={styles.logo} onClick={() => handleNavClick('home')}>
             <img 
-                src={logoImage} 
+                src="https://i.ibb.co/KcLhq4qM/nutrix.png"
               alt="Nutrix Logo" 
               className={styles.logoImage}
             />
